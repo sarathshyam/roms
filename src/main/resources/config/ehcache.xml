@@ -1,0 +1,10 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="true"
+	monitoring="autodetect" dynamicConfig="true" maxBytesLocalHeap="150M">
+	<diskStore path="java.io.tmpdir" />
+
+	<cache name="menuItemCache" maxBytesLocalHeap="100M" eternal="true"
+		timeToIdleSeconds="0" overflowToDisk="true" maxElementsOnDisk="1000"
+		memoryStoreEvictionPolicy="LRU" />
+
+</ehcache>
